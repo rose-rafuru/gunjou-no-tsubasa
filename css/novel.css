@@ -1,0 +1,250 @@
+/*---------------------------------------------
+小説ページ
+-----------------------------------------------*/
+
+.novel {
+    position: relative;
+
+    background: #faf8f2;
+
+    padding: 60px;
+    margin: 40px auto;
+
+    border: 1px solid #d6cfc0;
+}
+
+.novel-page{
+    width: 95%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.novel-header{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+/*---------------------------------------------
+透かしの薔薇
+-----------------------------------------------*/
+
+.novel::before {
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    width: 550px;
+    height: 550px;
+
+    background-image: url("../images/rose.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    opacity: 0.05;
+
+    transform: translate(-50%, -50%);
+
+    pointer-events: none;
+
+    z-index: 0;
+}
+
+/*---------------------------------------------
+タイトル
+-----------------------------------------------*/
+
+.novel h1 {
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
+
+    margin-bottom: 15px;
+
+    color: #4f5d4a;
+
+    font-size: 2rem;
+    font-weight: normal;
+
+    letter-spacing: 0.08em;
+}
+
+/*---------------------------------------------
+章タイトル
+-----------------------------------------------*/
+
+.chapter {
+    position: relative;
+    z-index: 1;
+
+    text-align: center;
+
+    margin-bottom: 50px;
+
+    color: #8c5f63;
+
+    font-size: 1.2rem;
+
+    letter-spacing: 0.1em;
+}
+
+/*---------------------------------------------
+飾り
+-----------------------------------------------*/
+
+
+/*---------------------------------------------
+本文
+-----------------------------------------------*/
+
+.novel-text {
+    position: relative;
+    z-index: 1;
+
+    line-height: 2.4;
+
+    font-size: 1rem;
+}
+
+.novel-text p {
+    margin-bottom: 2em;
+
+    text-indent: 1em;
+}
+
+/*---------------------------------------------
+会話文
+-----------------------------------------------*/
+
+.novel-text p.dialog {
+    text-indent: 0;
+}
+
+/*---------------------------------------------
+区切り
+-----------------------------------------------*/
+
+.scene-break {
+    text-align: center;
+
+    margin: 50px 0;
+
+    color: #b89b5e;
+
+    letter-spacing: 0.3em;
+}
+
+/*---------------------------------------------
+前へ・次へ
+-----------------------------------------------*/
+
+.novel-nav {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 60px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #d6cfc0;
+}
+
+.novel-nav a {
+    color: #6b584b;
+
+    text-decoration: none;
+}
+
+.novel-nav a:hover {
+    color: #a67c7b;
+}
+
+/*---------------------------------------------
+感想をお寄せください
+-----------------------------------------------*/
+
+.comment-message{
+    text-align:center;
+    margin-top:40px;
+    color:#666;
+}
+
+.comment-link{
+    text-align:center;
+    margin:20px 0 40px;
+}
+
+.comment-link a{
+    display:inline-block;
+    padding:10px 24px;
+    border:1px solid #b9965a;
+    border-radius:25px;
+    text-decoration:none;
+    color:#8b6b2e;
+    background:#fffdf8;
+}
+
+.comment-link a:hover{
+    background:#f5ecd7;
+}
+
+/*---------------------------------------------
+作品一覧へ戻る
+-----------------------------------------------*/
+
+.back-link {
+    text-align: center;
+
+    margin-top: 40px;
+}
+
+.back-link a {
+    color: #6b584b;
+
+    text-decoration: none;
+}
+
+.back-link a:hover {
+    color: #a67c7b;
+}
+
+/*---------------------------------------------
+スマホ対応
+-----------------------------------------------*/
+
+@media (max-width: 768px) {
+
+    .novel {
+        padding: 30px 20px;
+    }
+
+    .novel::before {
+        width: 300px;
+        height: 300px;
+    }
+
+    .novel h1 {
+        font-size: 1.5rem;
+    }
+
+    .novel-text {
+        line-height: 2.2;
+    }
+}
+
+
+/*---------------------------------------------
+感想・ご質問のwavebox用 今のところ使用していない
+-----------------------------------------------*/
+
+.wavebox-note{
+    font-size: 14px;
+    color: #666;
+    line-height: 1.8;
+}
