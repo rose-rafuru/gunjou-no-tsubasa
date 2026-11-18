@@ -306,3 +306,23 @@ h3 {
     text-align: right;
     margin-top: 0.5rem;
 }
+
+
+/*---------------------------------------------
+スマホ対応
+-----------------------------------------------*/
+@media (max-width: 768px) {
+
+    .timeline-group{
+        column-count: 1;
+        column-gap: 0;
+    }
+
+    h3{
+        font-size: 1.2rem;
+    }
+
+    .story-list li{
+        padding: 12px 0;
+    }
+}
