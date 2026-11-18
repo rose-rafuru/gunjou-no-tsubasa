@@ -1,0 +1,328 @@
+/*---------------------------------------------
+基本設定
+-----------------------------------------------*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background-color: #f7f4ed;
+	color: #4b4640;
+
+	font-family:
+		"Yu Mincho",
+		"Hiragino Mincho ProN",
+	serif;
+
+	line-height: 1.9;
+}
+/*---------------------------------------------
+ページ全体の幅
+-----------------------------------------------*/
+
+.container{
+	width: 90%;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+/*---------------------------------------------
+ヘッダー
+-----------------------------------------------*/
+
+header {
+	text-align: center;
+	padding: 50px 20px 30px;
+	
+	border-bottom: 1px solid #c8bfa9;
+}
+
+	
+.site-title{
+	margin: 0;
+
+	color: #4f5b4a;
+
+	font-size: 2rem;
+	font-weight: normal;
+
+	letter-spacing: 0.15em;
+}
+
+.subtitle {
+	margin-top: 12px;
+	font-size: 0.9rem;
+	color: #8b7665;
+}
+
+
+/*---------------------------------------------
+メニュー
+-----------------------------------------------*/
+
+nav {
+	margin-top: 25px;
+}
+
+
+nav a{
+	margin: 0 12px;
+
+	color: #4f5d4a;
+
+	text-decoration: none;
+
+	font-size: 0.9em;
+}
+
+nav a:hover {
+
+	color:#a67c7b;
+}
+
+
+nav ul{
+	list-style:none;
+	padding:0;
+	margin:0;
+	display:flex;
+	justify-content:center;
+	gap:24px;
+}
+
+nav li{
+	list-style:none;
+}
+
+/*---------------------------------------------
+メイン部分
+-----------------------------------------------*/
+main{
+	padding: 45px 0 60px;
+}
+
+section{
+	margin-bottom: 60px;
+}
+
+
+/*---------------------------------------------
+見出し
+-----------------------------------------------*/
+
+
+h2 {
+	color: #4f5d4a;
+
+	font-size: 1.4rem;
+	font-weight: normal;
+
+	padding-bottom: 10px;
+
+	border-bottom:
+		1px solid #cfc4aa;
+}
+
+/*---------------------------------------------
+文章
+-----------------------------------------------*/
+p {
+	margin: 1rem;
+}
+
+/*---------------------------------------------
+小説一覧
+-----------------------------------------------*/
+
+.story-list {
+	list-style: none;
+
+	padding: 0;
+}
+
+.story-list li {
+	padding: 15px 0;
+
+	border-bottom:
+		1px dotted #c9c0b2;
+}
+
+.story-list a {
+	color:#6b584b;
+	text-decoration: none;
+}
+
+.story-list a:hover{
+	color: #a67c7b;
+}
+/*---------------------------------------------
+イラストギャラリー
+-----------------------------------------------*/
+
+.gallery {
+	display: grid;
+	
+	grid-template-columns:
+		repeat(auto-fit, minmax(200px, 1fr));
+
+	gap: 25px;
+}
+
+.gallery img{
+	width: 100%;
+	
+	height: auto;
+
+	display: block;
+}
+
+
+.admin {
+    font-size: 0.8rem;
+    color: #8a7a5b;
+    margin: 0;
+}
+
+
+/*---------------------------------------------
+フッター
+-----------------------------------------------*/
+
+footer {
+	text-align: center;
+	
+	padding: 30px 20px;
+
+	border-top: 
+		1px solid #c8bfa9;
+	
+	color: #8b7665;
+
+	font-size: 0.8rem;
+}
+
+
+/*---------------------------------------------
+小さな装飾
+-----------------------------------------------*/
+
+.ornament {
+	text-align: center;
+	margin: 10px 0 25px;
+	color: #8c5f63;
+	font-size: 1.4rem;
+	letter-spacing: 0.3em;
+}
+
+/*---------------------------------------------
+ページ全体の飾り枠
+-----------------------------------------------*/
+.page-frame {
+    position: relative;
+    margin: 25px;
+    padding: 30px;
+    border: 1px solid #b8a6a0;
+    outline: 4px double #d8ccc7;
+    outline-offset: 6px;
+}
+
+.corner {
+    position: absolute;
+    color: #b89b5e;
+    font-size: 30px;
+    line-height: 1;
+}
+
+.tl {
+    top: -15px;
+    left: -15px;
+}
+
+.tr {
+    top: -15px;
+    right: -15px;
+}
+
+.bl {
+    bottom: -15px;
+    left: -15px;
+}
+
+.br {
+    bottom: -15px;
+    right: -15px;
+}
+
+/*---------------------------------------------
+小説一覧
+-----------------------------------------------*/
+
+h3 {
+    margin-top: 40px;
+    color: #6b584b;
+    font-size: 1.1rem;
+    font-weight: normal;
+    border-left: 3px solid #b89b5e;
+    padding-left: 12px;
+}
+.timeline-group{
+    column-count: 2;
+    column-gap: 50px;
+}
+
+.timeline-group h3{
+    color: #6b584b;
+    font-size: 1.1rem;
+    font-weight: normal;
+
+    border-left: 3px solid #b89b5e;
+    padding-left: 10px;
+
+    margin-top: 0;
+    break-after: avoid;
+}
+
+.timeline-group ul{
+    break-inside: avoid;
+}	
+
+/*---------------------------------------------
+感想・ご質問のwavebox用
+-----------------------------------------------*/
+
+.wavebox-note {
+    font-size: 0.9rem;
+}
+
+/*---------------------------------------------
+カウンター
+-----------------------------------------------*/
+
+.visitor {
+    font-size: 0.8rem;
+    color: #888;
+    text-align: right;
+    margin-top: 0.5rem;
+}
+
+
+/*---------------------------------------------
+スマホ対応
+-----------------------------------------------*/
+@media (max-width: 768px) {
+
+    .timeline-group{
+        column-count: 1;
+        column-gap: 0;
+    }
+
+    h3{
+        font-size: 1.2rem;
+    }
+
+    .story-list li{
+        padding: 12px 0;
+    }
+}
