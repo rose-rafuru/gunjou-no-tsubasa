@@ -220,8 +220,13 @@
 
 @media (max-width: 768px) {
 
-    .novel {
+     .novel-page{
+        width: 99%;
+    }
+
+    .novel{
         padding: 25px 5px;
+        margin: 10px auto;
     }
 
     .novel::before {
