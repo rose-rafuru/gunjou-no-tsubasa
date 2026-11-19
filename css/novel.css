@@ -239,9 +239,11 @@
     }
 
     .novel-text {
-        font-size: 1rem;
-	line-height: 2.2;
+    font-size: 1.1rem;
+    line-height: 2.0;
+    letter-spacing: 0.02em;
     }
+
 }
 
 
