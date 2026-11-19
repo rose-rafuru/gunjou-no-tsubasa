@@ -314,9 +314,9 @@ h3 {
 @media (max-width: 768px){
 
     .site-title{
-        font-size: 1.4rem;
-        letter-spacing: 0.08em;
-    }
+    font-size: 1.3rem;
+    letter-spacing: 0.08em;
+}
 
     .subtitle{
         font-size: 0.8rem;
