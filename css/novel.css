@@ -226,7 +226,7 @@
 
     .novel{
         padding: 25px 5px;
-        margin: 10px auto;
+        margin: 5px auto;
     }
 
     .novel::before {
@@ -239,7 +239,8 @@
     }
 
     .novel-text {
-        line-height: 2.2;
+        font-size: 1.1rem;
+	line-height: 2.2;
     }
 }
 
