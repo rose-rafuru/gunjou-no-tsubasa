@@ -221,7 +221,7 @@
 @media (max-width: 768px) {
 
     .novel {
-        padding: 30px 20px;
+        padding: 25px 5px;
     }
 
     .novel::before {
