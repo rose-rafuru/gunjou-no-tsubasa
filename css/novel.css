@@ -9,7 +9,8 @@
 
     background-image: url("../images/rose.png");
     background-repeat: repeat-y;
-    background-position: left center;
+    background-position: left top;
+
     background-size: 120px;
 
     padding: 60px;
