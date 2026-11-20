@@ -270,7 +270,6 @@ h3 {
 .timeline-group{
     column-count: 2;
     column-gap: 50px;
-	border: 5px solid red;
 }
 
 .timeline-group h3{
