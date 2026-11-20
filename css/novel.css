@@ -4,11 +4,17 @@
 
 .novel {
     position: relative;
+
     background-color: #faf8f2;
 
-    padding: 60px;
-    margin: 40px auto;
+    background-image: url("../images/whiterose.png");
+    background-repeat: repeat-y;
+    background-position: 10px top;
+    background-size: 70px;
 
+    padding: 60px 60px 60px 100px;
+
+    margin: 40px auto;
     border: 1px solid #d6cfc0;
 }
 
@@ -35,30 +41,6 @@
 
 .novel {
     position: relative;
-}
-/*---------------------------------------------
-透かしの薔薇
------------------------------------------------*/
-.novel::before {
-    content: "";
-    position: absolute;
-
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    width: 500px;
-    height: 500px;
-
-    background-image: url("../images/whiterose.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-
-    opacity: 0.08;
-
-    pointer-events: none;
-    z-index: 0;
 }
 
 /*---------------------------------------------
