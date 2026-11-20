@@ -24,6 +24,15 @@
     margin-bottom: 60px;
 }
 
+.novel-header,
+.novel-text,
+.novel-nav,
+.comment-message,
+.comment-link,
+.back-link {
+    position: relative;
+    z-index: 1;
+}
 
 /*---------------------------------------------
 透かしの薔薇
@@ -35,15 +44,16 @@
 
     top: 0;
     left: 0;
-
-    width: 100%;
+   
+    width: 250%px;
     height: 100%;
 
     background-image: url("../images/rose.png");
-    background-repeat: repeat;
+    background-repeat: repeat-y;
+    background-position: left top;
     background-size: 220px;
 
-    opacity: 0.03;
+    opacity: 0.04;
 
     pointer-events: none;
 
