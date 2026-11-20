@@ -4,14 +4,7 @@
 
 .novel {
     position: relative;
-
     background-color: #faf8f2;
-
-    background-image: url("../images/whiterose.png");
-    background-repeat: repeat-y;
-    background-position: left top;
-
-    background-size: 60px;
 
     padding: 60px;
     margin: 40px auto;
@@ -62,7 +55,7 @@
     background-position: center;
     background-size: contain;
 
-    opacity: 0.15;
+    opacity: 0.08;
 
     pointer-events: none;
     z-index: 0;
