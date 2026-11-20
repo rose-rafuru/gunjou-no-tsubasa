@@ -5,7 +5,12 @@
 .novel {
     position: relative;
 
-    background: #faf8f2;
+    background-color: #faf8f2;
+
+    background-image: url("../images/rose.png");
+    background-repeat: repeat-y;
+    background-position: left center;
+    background-size: 250px;
 
     padding: 60px;
     margin: 40px auto;
@@ -37,11 +42,11 @@
 /*---------------------------------------------
 透かしの薔薇
 -----------------------------------------------*/
-
+/*
 .novel::before {
     content: "";
     position: absolute;
-
+*/
     top: 0;
     left: 0;
    
