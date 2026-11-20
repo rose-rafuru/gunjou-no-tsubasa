@@ -41,12 +41,11 @@
     height: 550px;
 
     background-image: url("../images/rose.png");
-    background-color: yellow;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 
-    opacity: 1;
+    opacity: 0.05;
 
     transform: translate(-50%, -50%);
 
