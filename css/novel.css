@@ -135,7 +135,7 @@
 .novel-nav {
     display: flex;
 
-    justify-content: space-between;
+    justify-content: center;
 
     margin-top: 60px;
 
@@ -146,8 +146,8 @@
 
 .novel-nav a {
     color: #6b584b;
-
     text-decoration: none;
+    margin: 0 2em;
 }
 
 .novel-nav a:hover {
