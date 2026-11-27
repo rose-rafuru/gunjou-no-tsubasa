@@ -285,4 +285,6 @@
 .current-chapter {
     color: #8c6b6b;
     font-weight: bold;
+    border-bottom: 2px solid #8c6b6b;
+    padding-bottom: 2px;
 }
