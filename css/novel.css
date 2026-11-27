@@ -52,7 +52,7 @@
     z-index: 1;
 
     text-align: center;
-    
+
     margin-top: 0;
     margin-bottom: 10px;
 
@@ -210,7 +210,7 @@
 
 @media (max-width: 768px) {
 
-     .novel-page{
+    .novel-page{
         width: 100%;
     }
 
@@ -229,13 +229,17 @@
     }
 
     .novel-text {
-    font-size: 1.1rem;
-    line-height: 2.0;
-    letter-spacing: 0.02em;
+        font-size: 1.1rem;
+        line-height: 2.0;
+        letter-spacing: 0.02em;
     }
 
-}
+    .chapter-menu {
+        font-size: 0.8rem;
+        letter-spacing: 0.05em;
+    }
 
+}    
 
 /*---------------------------------------------
 感想・ご質問のwavebox用 今のところ使用していない
