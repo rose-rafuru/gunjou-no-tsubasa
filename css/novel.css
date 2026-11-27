@@ -268,7 +268,9 @@
 ---------------------------------------------*/
 .chapter-menu {
     text-align: center;
-    margin: 30px 0;
+    margin: 30px 0 40px;
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
 }
 
 .chapter-menu a {
@@ -279,4 +281,8 @@
 
 .chapter-menu a:hover {
     text-decoration: underline;
+}
+.current-chapter {
+    color: #8c6b6b;
+    font-weight: bold;
 }
